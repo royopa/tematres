@@ -1,0 +1,66 @@
+#   TemaTres : aplicación para la gestión de vocabularios controlados #      
+#   TemaTres : The way to manage formal representations of knowledge #  
+#                                                                     
+#   Copyright (C) 2004-2013 Diego Ferreyra tematres@r020.com.ar
+#   Distribuido bajo Licencia GNU Public License, versión 2 (de junio de 1.991) Free Software Foundation
+#   Este es el archivo LEAME.TXT
+###############################################################################################################
+
+
+TemaTres se distribuye bajo licencia GNU Public License (GPL==Pública General de GNU), versión 2 (de junio de 1.991).
+
+Para instrucciones de instalación y documentación disponible: http://r020.com.ar/tematres/manual/
+
+For instruction, please visit: http://vocabularyserver.com/wiki/
+and (in spanish) http://r020.com.ar/tematres/manual/
+
+For examples, please visit: http://www.vocabularyserver.com/vocabularies.php
+
+=============================================================================
+
+Changelog TemaTres 1.72 version:
+- Now you can config the behavior of the term suggestion (autocomplete): predict word by word or predict by whole sentence.
+- Now you can use the term suggestion functions from any web app, call this URL: http://YOUR_VOCAB/suggest.php?query=string 
+- Fix problems with mapping terms in Skos-core representations
+- New capabilities for TemaTres API: fetch (Search and retrieve terms using exact matching) 
+- Update deprecated functions
+- Change default mysql connection to mysqli
+- Improve libraries: now we use htmlpurifier
+- Improve autocomplete
+- Fixed bugs and improved several functional aspects.
+
+
+
+Changelog TemaTres 1.71 version:
+- New capabilities for TemaTres API: searchNotes
+- Fixed bugs and improved several functional aspects.
+
+Changelog TemaTres 1.7 version:
+
+- Now you can have a SPARQL Endpoint for your TemaTres vocabulary. Many thanks to Enayat Rajabi!!!
+- Capability to create and manage meta-terms. Meta-term is a term to describe others terms (Ej: Guide terms, Facets, Categories, etc.). Can't be use in indexing process.  
+- New standard reports: all the terms with his UF terms and all the terms with his RT terms.
+- Capability to define custom fields in alphabetical export 
+- New capabilities for TemaTres API: suggest & suggestDetails
+- Fixed bugs and improved several functional aspects.
+
+
+
+
+Many thanks to the feedback provided by TemaTres community :)
+
+Some HOWTO:
+How to update to Tematres 1.7:
+- Login as admin and go to: Menu -> Administration -> Database maintance -> Update 1.6 to 1.7
+
+How to enable SPARQL endpoint:
+1) Login as admin and go to Menu -> Administration -> Configuration -> Click in your vocabulary: Set as ENABLE SPARQL endpoint (by default is disable).
+
+2) Login as admin and Goto: Menu -> Administration -> Database maintance -> Update SPARQL endpoint.
+
+
+diego ferreyra
+tematres@r020.com.ar
+http://www.vocabularyserver.com
+
+
