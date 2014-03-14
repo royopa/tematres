@@ -908,8 +908,7 @@ if((CFG_SIMPLE_WEB_SERVICE !== "1") || (!$task)){
 		
 		//~ 
 		// sanitice $letter
-		$arg=trim(urldecode($arg));
-		$arg=secure_data($arg,"alnum");
+c
 			
 		$response = $service-> fetchTermsByLetter($arg);
 		break;
@@ -938,7 +937,9 @@ if((CFG_SIMPLE_WEB_SERVICE !== "1") || (!$task)){
 
 	$arrayResume['version'] = $CFG["Version"];		
 
-	$arrayResume["cant_result"] = count($response["result"]);
+        //commented code to use with DSpace Authority Control
+        //see: https://wiki.duraspace.org/display/DSDOC4x/Authority+Control+of+Metadata+Values
+	//$arrayResume["cant_result"] = count($response["result"]);
 
 	$response["resume"] = $arrayResume;
 
@@ -1116,6 +1117,9 @@ if ($beginning) {
 	$output .= '<'.'?'.'xml version="1.0" encoding="'.$encode.'"'.'?'.'>';
 	
 	$output .= '<' . $name . '>';
+        //added code to use with DSpace Authority Control
+        //see: https://wiki.duraspace.org/display/DSDOC4x/Authority+Control+of+Metadata+Values
+        $output .= '<cant_result>' . count($array["result"]) . '</cant_result>';
 	$nested = 0;
 }
 	foreach ($array as $root=>$child) {
