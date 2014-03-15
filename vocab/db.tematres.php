@@ -57,12 +57,12 @@ if ( ! defined('CFG_HASH_PASS')) {
 /*  In almost cases, you don't need to touch nothing here!!
  *  Absolute path to the directory where are located /common/include. 
  */
-if ( !defined('T3_ABSPATH') )
+if ( ! defined('T3_ABSPATH') )
 	/** Use this for version of PHP < 5.3 */
-	define('T3_ABSPATH', dirname(__FILE__) . '/../');
+	//~define('T3_ABSPATH', dirname(__FILE__) . '/../');
 
 	/** Use this for version of PHP >= 5.3	*/
-	//~ define('T3_ABSPATH', dirname(__DIR__) . '/');
+	define('T3_ABSPATH', dirname(__DIR__) . '/');
 	
 	/** Use to define specific local path for common/include directory */
 	//~ define('T3_ABSPATH', '/home/my_name/tematres/');
