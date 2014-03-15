@@ -49,7 +49,10 @@ $DBCFG["DBcharset"] ="utf8";
 $DBCFG["debugMode"] = "0"; 
                
 // Define if storage hashed passwords or not  (1 = Yes, 0 = No: default: 0)
-define('CFG_HASH_PASS','0');
+if ( ! defined('CFG_HASH_PASS')) {
+	define('CFG_HASH_PASS','0');
+}
+
 
 /*  In almost cases, you don't need to touch nothing here!!
  *  Absolute path to the directory where are located /common/include. 
