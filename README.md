@@ -38,8 +38,8 @@ You can change the "vocab" directory to any name. To create other or many vocabu
 
 If you have any problems with these instructions, or if they weren't clear or just didn't plain work, please let me know at tematres@r020.com.ar
 
-diego ferreyra
+diego ferreyra - tematres@r020.com.ar http://www.vocabularyserver.com
 
-tematres@r020.com.ar
-
-http://www.vocabularyserver.com
+Test Application
+----------------
+http://royopa.url.ph/tematres/vocab/index.php
