@@ -1,6 +1,9 @@
 TemaTres
 ========
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/royopa/tematres/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/royopa/tematres/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/royopa/tematres/badges/build.png?b=master)](https://scrutinizer-ci.com/g/royopa/tematres/build-status/master)
+
 TemaTres: controlled vocabulary server
 --------------------------------------
 
